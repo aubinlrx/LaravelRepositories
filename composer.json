@@ -1,0 +1,40 @@
+{
+  "name": "aubinlrx/laravelrepositories",
+  "description": "Laravel Repositories",
+  "keywords": [
+    "laravel",
+    "repository",
+    "repositories",
+    "eloquent",
+    "database"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Aubin LORIEUX",
+      "email": "aubin.lorieux@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.4.0",
+    "illuminate/support": "5.*",
+    "illuminate/database": "5.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "AubinLrx\\LaravelRepositories\\": "src/"
+    }
+  },
+  "autload-dev": {
+    "psr-4": {
+      "AubinLrx\\Tests\\LaravelRepositories\\": "tests/"
+    }
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "0.x-dev"
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
