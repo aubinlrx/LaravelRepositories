@@ -6,7 +6,7 @@ use AubinLrx\LaravelRepositories\Exceptions\RepositoryException;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Container as App;
 
-class Repository implements RepositoryInterface {
+abstract class Repository implements RepositoryInterface {
 
     /**
      * @var App
