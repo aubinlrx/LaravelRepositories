@@ -4,7 +4,7 @@ use AubinLrx\LaravelRepositories\Contracts\RepositoryInterface;
 use AubinLrx\LaravelRepositories\Exceptions\RepositoryException;
 
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Container as App;
+use Illuminate\Container\Container as App;
 
 abstract class Repository implements RepositoryInterface {
 
