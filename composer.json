@@ -22,12 +22,12 @@
   },
   "autoload": {
     "psr-4": {
-      "AubinLrx\\LaravelRepositories": "src/"
+      "AubinLrx\\LaravelRepositories\\": "src/"
     }
   },
   "autload-dev": {
     "psr-4": {
-      "AubinLrx\\Tests\\LaravelRepositories": "tests/"
+      "AubinLrx\\Tests\\LaravelRepositories\\": "tests/"
     }
   },
   "extra": {
