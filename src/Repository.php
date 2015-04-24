@@ -76,9 +76,11 @@ abstract class Repository implements RepositoryInterface {
      * @param  string $attribute
      * @return mixed
      */
-    public function update($id, array $data, $attribute = 'id')
+    public function update($id, array $data)
     {
-        return $this->model->where($attribute, '=', $id)->update($data);
+        $model = $this->model->find($id);
+
+        return $model->update($data);
     }
 
     /**
@@ -98,7 +100,7 @@ abstract class Repository implements RepositoryInterface {
      * @param  array  $columns
      * @return mixed
      */
-    public function find($id, array $columns = array('*'))
+    public function find($id, $columns = array('*'))
     {
         return $this->model->find($id, $columns);
     }
