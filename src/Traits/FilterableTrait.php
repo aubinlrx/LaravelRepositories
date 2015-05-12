@@ -1,6 +1,6 @@
 <?php namespace AubinLrx\LaravelRepositories\Traits;
 
-use AubinLrx\LaravelRepositories\Traits\Exceptions\FilterableException;
+use AubinLrx\LaravelRepositories\Exceptions\FilterableException;
 
 trait FilterableTrait {
 
