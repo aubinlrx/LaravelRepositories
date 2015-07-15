@@ -63,9 +63,9 @@ abstract class Repository implements RepositoryInterface {
      * @param  array  $data
      * @return mixed
      */
-    public function create(array $data)
+    public function create(array $attributes = [])
     {
-        return $this->model->create($data);
+        return $this->model->create($attributes);
     }
 
     /**
