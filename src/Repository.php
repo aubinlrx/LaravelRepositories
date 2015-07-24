@@ -63,9 +63,9 @@ abstract class Repository implements RepositoryInterface {
      * @param  array  $data
      * @return mixed
      */
-    public function create(array $data)
+    public function create(array $attributes = [])
     {
-        return $this->model->create($data);
+        return $this->model->create($attributes);
     }
 
     /**
@@ -103,6 +103,18 @@ abstract class Repository implements RepositoryInterface {
     public function find($id, $columns = array('*'))
     {
         return $this->model->find($id, $columns);
+    }
+
+    /**
+     * Find or fail
+     *
+     * @param $id
+     * @param array $columns 
+     * @return mixed
+     */
+    public function findOrFail($id, $columns = array('*'))
+    {
+        return $this->model->findOrFail($id, $columns);
     }
 
     /**
