@@ -106,6 +106,18 @@ abstract class Repository implements RepositoryInterface {
     }
 
     /**
+     * Find or fail
+     *
+     * @param $id
+     * @param array $columns 
+     * @return mixed
+     */
+    public function findOrFail($id, $columns = array('*'))
+    {
+        return $this->model->findOrFail($id, $columns);
+    }
+
+    /**
      * Find a record by criteria
      * 
      * @param  $field
