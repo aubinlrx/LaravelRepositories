@@ -1,6 +1,8 @@
 # LaravelRepositories
 Repository Pattern for Laravel 5 with Eloquent ORM
 
+**Version**: 0.1.5
+
 ## Filterable Trait
 
 Handy method to filter query
@@ -58,3 +60,9 @@ class BookController extends Controller {
 
 ?>
 ```
+
+## Release Logs
+
+**v0.1.5**
+- bug fix: Laravel 5.1 create method
+- feature: Add findOrFail method
